@@ -102,7 +102,7 @@ public class Communicator implements SerialPortEventListener{
             window.txtLog.setForeground(Color.black);
             window.txtLog.append(logText + "\n");
             serialPort.setSerialPortParams(
-                    9600,
+                    4800,
                     SerialPort.DATABITS_8,
                     SerialPort.STOPBITS_1,
                     SerialPort.PARITY_NONE);
