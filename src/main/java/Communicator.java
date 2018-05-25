@@ -199,7 +199,7 @@ public class Communicator implements SerialPortEventListener{
     @Override
     public void serialEvent(SerialPortEvent evt) {
 
-        System.out.println("ok");
+
         if (evt.getEventType() == SerialPortEvent.DATA_AVAILABLE)
         {
 
@@ -301,7 +301,7 @@ public class Communicator implements SerialPortEventListener{
     }
     public void freezeButtons()
     {
-        if (getConnected() == true)
+        if (getConnected())
         {
             window.jButton2.setEnabled(true);
             window.jButton1.setEnabled(false);
