@@ -201,6 +201,7 @@ public class Communicator implements SerialPortEventListener{
 
     @Override
     public void serialEvent(SerialPortEvent evt) {
+        System.out.println("TEST");
 
 
         if (evt.getEventType() == SerialPortEvent.DATA_AVAILABLE)
