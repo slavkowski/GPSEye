@@ -114,6 +114,7 @@ public class Communicator implements SerialPortEventListener{
             logText = selectedPort + " is in use. (" + e.toString() + ")";
             window.txtLog.setForeground(Color.RED);
             window.txtLog.append(logText + "\n");
+
         }
         catch (Exception e)
         {
@@ -134,6 +135,7 @@ public class Communicator implements SerialPortEventListener{
             input = serialPort.getInputStream();
 
             successful = true;
+            System.out.println("I/O Stream opened");
             return successful;
         }
         catch (IOException e) {
