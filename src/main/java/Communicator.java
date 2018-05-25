@@ -153,6 +153,7 @@ public class Communicator implements SerialPortEventListener{
         {
             serialPort.addEventListener(this);
             serialPort.notifyOnDataAvailable(true);
+            System.out.println("Listener initialized");
 
 
         }
