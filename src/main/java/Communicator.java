@@ -201,8 +201,6 @@ public class Communicator implements SerialPortEventListener{
 
     @Override
     public void serialEvent(SerialPortEvent evt) {
-        System.out.println("TEST");
-
 
         if (evt.getEventType() == SerialPortEvent.DATA_AVAILABLE)
         {
@@ -212,7 +210,7 @@ public class Communicator implements SerialPortEventListener{
                 try
                 {
                    int signINT = input.read();
-                   System.out.println(signINT);
+                   System.out.println("Sign = " + signINT);
                    if(signINT>0 && signINT<=127) {
                        
                        window.txtGPSNMEA.append(Character.toString((char) signINT));
