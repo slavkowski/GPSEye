@@ -203,6 +203,7 @@ public class Communicator implements SerialPortEventListener{
     public void serialEvent(SerialPortEvent evt) {
         System.out.println("TEST");
 
+        System.out.println("DUPA");
 
         if (evt.getEventType() == SerialPortEvent.DATA_AVAILABLE)
         {
